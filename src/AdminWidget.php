@@ -28,6 +28,16 @@ class AdminWidget extends Widget
             'icon' => IconHelper::BANNER,
             'link' => '/banner/admin'
         ],
+        'mailing' => [
+            'title' => 'Рассылки',
+            'icon' => IconHelper::MAILING,
+            'link' => '/mailing/admin'
+        ],
+        'callback' => [
+            'title' => 'Заявки на звонок',
+            'icon' => IconHelper::CALLBACK,
+            'link' => '/callback/admin'
+        ],
         'backup' => [
             'title' => 'Бекапы',
             'icon' => IconHelper::BACKUP,
@@ -38,11 +48,7 @@ class AdminWidget extends Widget
             'icon' => IconHelper::USER,
             'link' => '/user/admin'
         ],
-        'mailing' => [
-            'title' => 'Рассылки',
-            'icon' => IconHelper::MAILING,
-            'link' => '/mailing/admin'
-        ]
+
     ];
 
     private $_links = [];

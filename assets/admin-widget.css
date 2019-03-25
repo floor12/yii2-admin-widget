@@ -16,7 +16,12 @@
     color: #5a5a5a;
     position: relative;
     cursor: pointer;
+    margin: 5px 0;
     transition: color 0.3s ease;
+}
+
+#f12-admin-menu a:last-child {
+    margin: 10px 0 5px 0;
 }
 
 #f12-admin-menu a svg {
@@ -35,6 +40,7 @@
     display: block;
     padding: 1px 3px;
     transition: opacity 0.3s ease;
+    width: 200px;
 }
 
 #f12-admin-menu a:hover {
