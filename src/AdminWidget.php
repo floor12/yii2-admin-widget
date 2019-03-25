@@ -20,23 +20,28 @@ class AdminWidget extends Widget
     public $modules = [
         'shop' => [
             'title' => 'Магазин',
-            'icon' => 'shopping-bag',
+            'icon' => IconHelper::SHOP,
             'link' => '/shop/admin'
         ],
         'banner' => [
             'title' => 'Баннеры',
-            'icon' => 'images ',
+            'icon' => IconHelper::BANNER,
             'link' => '/banner/admin'
         ],
         'backup' => [
             'title' => 'Бекапы',
-            'icon' => 'hdd',
+            'icon' => IconHelper::BACKUP,
             'link' => '/backup/admin'
         ],
         'user' => [
             'title' => 'Пользователи',
-            'icon' => 'users',
+            'icon' => IconHelper::USER,
             'link' => '/user/admin'
+        ],
+        'mailing' => [
+            'title' => 'Рассылки',
+            'icon' => IconHelper::MAILING,
+            'link' => '/mailing/admin'
         ]
     ];
 
@@ -48,10 +53,13 @@ class AdminWidget extends Widget
         if (!Yii::$app->getModule('pages')->adminMode())
             return;
 
+        AdminWidgetAsset::register($this->getView());
 
         foreach ($this->modules as $module => $moduleData)
             if (Yii::$app->getModule($module))
-                $this->_links[] = Html::a(FontAwesome::icon($moduleData['icon']), [$moduleData['link']], ['title' => $moduleData['title']]);
+                $this->_links[] = Html::a("{$moduleData['icon']} <span>{$moduleData['title']}</span>", [$moduleData['link']]);
+
+        $this->_links[] = Html::a(IconHelper::LOGOUT . " <span>Выход</span>", ['/user/frontend/logout']);
 
         return Html::tag('div', implode($this->_links), ['id' => 'f12-admin-menu']);
     }

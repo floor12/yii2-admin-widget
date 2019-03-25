@@ -1,0 +1,47 @@
+#f12-admin-menu {
+    position: fixed;
+    top: 210px;
+    font-size: 110%;
+    background-color: #eee;
+    border: 2px #5a5a5a solid;
+    border-left: 0;
+    z-index: 9999;
+    box-shadow: 0px 3px 7px #0000004a;
+}
+
+#f12-admin-menu a {
+    display: block;
+    padding: 3px;
+    text-align: left;
+    color: #5a5a5a;
+    position: relative;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+#f12-admin-menu a svg {
+    height: 1.4em;
+    width: 29px;
+    vertical-align: -0.425em;
+}
+
+#f12-admin-menu a span {
+    display: none;
+    opacity: 0;
+    position: absolute;
+    top: 4px;
+    left: 42px;
+    border-left: 0;
+    display: block;
+    padding: 1px 3px;
+    transition: opacity 0.3s ease;
+}
+
+#f12-admin-menu a:hover {
+    color: black;
+}
+
+#f12-admin-menu a:hover span {
+    display: block;
+    opacity: 1;
+}
