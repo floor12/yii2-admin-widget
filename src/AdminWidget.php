@@ -15,7 +15,7 @@ use yii\helpers\Html;
 
 class AdminWidget extends Widget
 {
-
+    public $modulesAdditinal = [];
 
     public $modules = [
         'shop' => [
@@ -37,6 +37,11 @@ class AdminWidget extends Widget
             'title' => 'Заявки на звонок',
             'icon' => IconHelper::CALLBACK,
             'link' => '/callback/admin'
+        ],
+        'feedback' => [
+            'title' => 'Обратная связь',
+            'icon' => IconHelper::FEEDBACK,
+            'link' => '/feedback/admin'
         ],
         'backup' => [
             'title' => 'Бекапы',
