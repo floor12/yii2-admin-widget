@@ -18,6 +18,11 @@ class AdminWidget extends Widget
     public $modulesAdditinal = [];
 
     public $modules = [
+        'pages' => [
+            'title' => 'Страницы',
+            'icon' => IconHelper::PAGES,
+            'link' => '/pages/admin'
+        ],
         'shop' => [
             'title' => 'Магазин',
             'icon' => IconHelper::SHOP,

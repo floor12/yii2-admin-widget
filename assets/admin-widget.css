@@ -37,9 +37,15 @@
     top: 4px;
     left: 42px;
     border-left: 0;
-    padding: 1px 3px;
-    transition: opacity 0.3s ease;
-    width: 200px;
+    padding: 3px 9px;
+    transition: all 0.3s ease;
+    background: #000008b3;
+    display: inline;
+    color: white;
+    border-radius: 2px;
+    white-space: nowrap;
+    box-shadow: 0 1px 5px #00000087;
+    margin-left: 15px;
 }
 
 #f12-admin-menu a:hover {
@@ -49,4 +55,5 @@
 #f12-admin-menu a:hover span {
     display: block;
     opacity: 1;
+    margin-left: 0;
 }
