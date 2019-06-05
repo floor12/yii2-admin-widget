@@ -71,6 +71,9 @@ class AdminWidget extends Widget
 
         AdminWidgetAsset::register($this->getView());
 
+        foreach ($this->modulesAdditinal as $module => $moduleData)
+            $this->_links[] = Html::a("{$moduleData['icon']} <span>{$moduleData['title']}</span>", [$moduleData['link']]);
+
         foreach ($this->modules as $module => $moduleData)
             if (Yii::$app->getModule($module))
                 $this->_links[] = Html::a("{$moduleData['icon']} <span>{$moduleData['title']}</span>", [$moduleData['link']]);

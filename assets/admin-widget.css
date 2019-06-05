@@ -1,12 +1,13 @@
 #f12-admin-menu {
     position: fixed;
-    top: 210px;
+    top: 50%;
     font-size: 110%;
     background-color: #eee;
     border: 2px #5a5a5a solid;
     border-left: 0;
     z-index: 9999;
     box-shadow: 0px 3px 7px #0000004a;
+    margin-top: -100px;
 }
 
 #f12-admin-menu a {
