@@ -33,6 +33,11 @@ class AdminWidget extends Widget
             'icon' => IconHelper::BANNER,
             'link' => '/banner/admin'
         ],
+        'comments' => [
+            'title' => 'Комментарии',
+            'icon' => IconHelper::COMMENTS,
+            'link' => '/comments/admin'
+        ],
         'mailing' => [
             'title' => 'Рассылки',
             'icon' => IconHelper::MAILING,
