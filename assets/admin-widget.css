@@ -52,7 +52,8 @@
     color: black;
 }
 
-#f12-admin-menu a:hover span {
+#f12-admin-menu a:hover span,
+#f12-admin-menu a:focus span {
     visibility: visible;
     opacity: 1;
     margin-left: 0;
