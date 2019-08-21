@@ -41,7 +41,7 @@ class AdminWidget extends Widget
         'mailing' => [
             'title' => 'Рассылки',
             'icon' => IconHelper::MAILING,
-            'link' => '/mailing/admin'
+            'link' => '/mailing/mailing'
         ],
         'callback' => [
             'title' => 'Заявки на звонок',
