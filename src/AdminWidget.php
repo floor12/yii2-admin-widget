@@ -26,7 +26,7 @@ class AdminWidget extends Widget
         'shop' => [
             'title' => 'Магазин',
             'icon' => IconHelper::SHOP,
-            'link' => '/shop/admin'
+            'link' => '/shop/admin/product'
         ],
         'banner' => [
             'title' => 'Баннеры',
