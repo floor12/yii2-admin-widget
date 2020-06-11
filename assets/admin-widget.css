@@ -1,7 +1,5 @@
 
 #f12-admin-menu {
-
-
     position: fixed;
     font-size: 110%;
     background-color: #eee;
@@ -14,7 +12,13 @@
     width: 100%;
     bottom: 0;
     top: auto;
+    left: -35px;
+    transition: left 0.3s ease;
     justify-content: space-around;
+}
+
+#f12-admin-menu:hover {
+    left: 0;
 }
 
 @media (min-width: 769px) {
@@ -68,5 +72,5 @@
 #f12-admin-menu a:focus span {
     visibility: visible;
     opacity: 1;
-    margin-left: 0;
+    margin-: 0;
 }
