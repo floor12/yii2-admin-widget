@@ -12,7 +12,7 @@
     width: 100%;
     bottom: 0;
     top: auto;
-    left: -35px;
+    left: 0;
     transition: left 0.3s ease;
     justify-content: space-around;
 }
@@ -24,6 +24,7 @@
 @media (min-width: 769px) {
     #f12-admin-menu {
         top: 50%;
+        left: -30px;
         flex-direction: column;
         bottom: auto;
         width: auto;
